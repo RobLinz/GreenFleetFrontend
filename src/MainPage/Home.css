@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /*background-color: #93c168;*/
+}
+
+.nav{
+    background-color: #ffffff;
+    color: forestgreen;
+    padding: 20px 0 10px 0; /*top right bottom left */
+    display: flex;
+    align-items: baseline;
+}
+
+.nav > .navButton{
+    padding: 0 25px 0 25px;
+    font-size: 18px;
+    color: #333333;
+    flex: 0 0 100px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.nav > .navButton:hover{
+    font-weight: bold;
+    color: #000000;
+}
+
+.logo {
+    color: #000000;
+    padding-left: 25px;
+    font-size: 24px;
+    font-weight:bold;
+    flex: 1;
+    text-align: left;
+}
+
+.logo > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content .imgSlider{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chevron-left {
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 20px;
+    color: #000000;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.chevron-right {
+    position: absolute;
+    float: right;
+    top: 50%;
+    right: 20px;
+    color: #000000;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.chevron-left:hover {
+    text-decoration: none;
+    color: #93c168;
+}
+
+.chevron-right:hover {
+    text-decoration: none;
+    color: #93c168;
+}
+
+
+
+
+
+
+
+
+
+
+
+

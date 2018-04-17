@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: #ffffff;
+    color: forestgreen;
+    padding: 20px 0 10px 0; /*top right bottom left */
+    display: flex;
+    align-items: baseline;
+}
+
+.nav > .navButton{
+    padding: 0 25px 0 25px;
+    font-size: 16px;
+    color: #333333;
+    flex: 0 0 100px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.nav > .navButton:hover{
+    font-weight: bold;
+    color: #000000;
+}
+
+.logo {
+    color: #000000;
+    padding-left: 25px;
+    font-size: 24px;
+    font-weight:bold;
+    flex: 1;
+    text-align: left;
+}
+
+.logo:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #4c9e2b;
+}
+
+.Home-fleet .content {
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content .fleet-title {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    /*background: linear-gradient(to top, #afea7f, #ffffff) ;*/
+
+    display: flex;
+}
+.content .fleet-title .border-line-pseudo {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    border-top: 2px #7ebda4 solid;
+}
+
+.content .fleet-title .fleet-label {
+    flex: 6;
+
+    color: #000000;
+    font-family: Arial;
+    text-align: center;
+    margin-right: 5%;
+}
+
+
+.content .fleet-title .fleet-label .your-fleet ,h2 {
+     font-weight: bold;
+     font-size: 54px;
+ }
+
+.content .fleet-info {
+    flex: 7;
+    width: 100%;
+
+    display: flex;
+}
+
+.content .fleet-info .fleet {
+    flex: 6;
+    list-style: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+
+    margin-left: 2%;
+    margin-right: 4%;
+    border-radius: 5px;
+}
+.content .fleet-info .fleet .plantListItem {
+    padding: 5px;
+    height: 240px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content .fleet-info .fleet .plantListItem .plantImg {
+    flex: 2.25;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px #7dbda3 solid;
+    width: 110px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content .fleet-info .fleet .plantListItem .plantImg:hover {
+    cursor: pointer;
+}
+
+.content .fleet-info .fleet .plantListItem .plantImg .img-circle{
+
+}
+
+.content .fleet-info .fleet .plantListItem .plantName {
+    flex: 0.75;
+    font-weight: bold;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.content .fleet-info .fleet .plantListItem .plantName:hover {
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.content .fleet-info .fleet .plantListItem .plantSummary {
+    flex: 0.8;
+    overflow: hidden;
+
+    display: flex;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+.content .fleet-info .fleet .plantListItem .plantSummary .plant-green-icon {
+    flex: 1;
+    border-radius: 50%;
+    margin-right: 2px;
+    height: 30px;
+}
+
+.content .fleet-info .fleet .plantListItem .plantSummary .plant-writing {
+    flex: 4.5;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-align: left;
+    font-size: 14px;
+
+}
+
+.content .fleet-info .fleet-stats{
+    flex: 4;
+    margin-top: 15px;
+    margin-right: 2%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content .fleet-info .fleet-stats .edit-fleet-buttons {
+    flex: 1;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: left;
+
+    display: flex;
+}
+
+.content .fleet-info .fleet-stats .edit-fleet-buttons .add-plant-glyph-button {
+    padding-top: 12px;
+    background: none;
+    border: none;
+    z-index: 0;
+
+    font-size: 24px;
+}
+
+.content .fleet-info .fleet-stats .edit-fleet-buttons .add-plant-glyph-button:hover {
+    border: none;
+    cursor: pointer;
+    color: #7dbda3;
+}
+
+.content .fleet-info .fleet-stats .edit-fleet-buttons .size {
+    flex: 3;
+    padding-top: 10px;
+    padding-left: 20px;
+
+    font-size: 24px;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips{
+    flex: 15;
+    margin-bottom: 2%;
+    background-color: #a2d05e;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips .writing{
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips .tips-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #1a4e1a;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips .common{
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a4e1a;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips ,ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #000000;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips ,li{
+    padding-left: 1em;
+    text-align: left;
+    list-style: none;
+    margin: 0 10px 4px 0;
+    color: #000000;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips .a{
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips ,li::before{
+    content: "• ";
+    color: #fffff7;
+}
+
+.content .fleet-info .fleet-stats .fleet-sum{
+    flex: 1;
+    margin-bottom: 2%;
+    background-color: #99c8f1;
+    border-radius: 5px;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content .fleet-info .fleet-stats .sum-title {
+    color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 36px;
+
+    flex: 1;
+}
+.content .fleet-info .fleet-stats .sum-info {
+    flex: 4;
+
+    display: flex;
+}
+
+.content .fleet-info .fleet-stats .sum-info .sum-info-left {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content .fleet-info .fleet-stats .sum-info .sum-info-right {
+
+}
+
+.content .fleet-info .fleet-stats .fleet-tips ,h3 {
+    color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips .typeListItem {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+
+.content .fleet-info .fleet-stats .fleet-tips .summary-stat {
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+.content .fleet-info .fleet-stats .fleet-tips .color-num {
+    color: #f2e123
+}
+
+
+
+
+
+
+
+
+
+

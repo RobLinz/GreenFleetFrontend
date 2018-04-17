@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: #ffffff;
+    color: forestgreen;
+    padding: 20px 0 10px 0; /*top right bottom left */
+    display: flex;
+    align-items: baseline;
+}
+
+.nav > .navButton{
+    padding: 0 25px 0 25px;
+    font-size: 16px;
+    color: #333333;
+    flex: 0 0 100px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.nav > .navButton:hover{
+    font-weight: bold;
+    color: #000000;
+}
+
+.logo {
+    color: #000000;
+    padding-left: 25px;
+    font-size: 24px;
+    font-weight:bold;
+    flex: 1;
+    text-align: left;
+}
+
+.logo:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #4c9e2b;
+}
+
+.SignUp .content {
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../Assets/plants.png");
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content .top-sect {
+    width: 100%;
+}
+
+
+.content .form-sect { /* Container */
+    flex: 9;
+    width: 100%;
+
+    display: flex;
+}
+
+.content .form-sect .left-form {
+    flex: 2;
+    padding-left: 25px;
+    padding-top: 25px;
+    text-align: left;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.6;
+    font-family: Arial;
+    color: #000000;
+}
+
+.content .form-sect .form {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 5% 5%;
+    margin-top: 10%;
+    background-color: rgba(147, 193, 104, 0.9);
+    border-radius: 5px;
+}
+
+.content .form-sect .right-form {
+    flex: 0.5;
+}
+
+.content .form-sect .form .submit {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 50px;
+}
+.content .form-sect .form .submit:hover {
+    background-color: #e2e1e7;
+}
+
+.content .form-sect .form .bottom-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.content .form-sect .form .sign-up-title {
+    text-align: center;
+}
+
+.content .form-sect .form .validInput {
+    height: 50px;
+    padding-left: 10px;
+    font-size: 18px;
+    box-shadow: 0 0 10px #1850c1;
+    border: none;
+    border-radius: 5px;
+}
+
+.content .form-sect .form .invalidInput {
+    height: 50px;
+    padding-left: 10px;
+    font-size: 18px;
+    box-shadow: 0 0 10px  #c10827;
+    border-radius: 5px;
+    border: none;
+}
+
+.content .form-sect .form .register-error {
+    font-size: 18px;
+    color: red;
+}
+.content .form-sect .form .register-success {
+    font-size: 18px;
+    color: dodgerblue;
+}
+
+
+
+
+
+
+
